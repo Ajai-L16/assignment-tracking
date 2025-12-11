@@ -85,11 +85,14 @@ body {
   }
 }
 
+/*-------------------------------------------Home Page--------------------------------------------------------*/
 .home_h1 {
   text-align: center;
   color: rgb(4, 200, 255);
   margin-top: 2rem;
 }
+
+
 
 .home-container {
   display: flex;

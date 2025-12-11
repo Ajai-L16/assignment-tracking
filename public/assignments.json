@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Mathematics Problem Set",
+    "subject": "Math",
+    "description": "Complete exercises 5.1 to 5.5 from the textbook.",
+    "dueDate": "2023-11-15",
+    "status": "Pending"
+  },
+  {
+    "id": 2,
+    "title": "History Essay",
+    "subject": "History",
+    "description": "Write a 1000-word essay on the Industrial Revolution.",
+    "dueDate": "2023-11-20",
+    "status": "In Progress"
+  },
+  {
+    "id": 3,
+    "title": "Physics Lab Report",
+    "subject": "Physics",
+    "description": "Submit the report for the projectile motion experiment.",
+    "dueDate": "2023-11-10",
+    "status": "Completed"
+  },
+  {
+    "id": 4,
+    "title": "English Literature Reading",
+    "subject": "English",
+    "description": "Read chapters 1-3 of 'To Kill a Mockingbird'.",
+    "dueDate": "2023-11-12",
+    "status": "Pending"
+  }
+]
