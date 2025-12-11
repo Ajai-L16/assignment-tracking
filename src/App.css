@@ -87,51 +87,58 @@ body {
 
 /*-------------------------------------------Home Page--------------------------------------------------------*/
 .home_h1 {
-  text-align: center;
-  color: rgb(4, 200, 255);
+  text-align: left;
+  color: rgb(146, 4, 255);
   margin-top: 2rem;
 } 
 
-.home-container {
-  display: flex;
+.home-container-1 {
+  display: block;
   justify-content: center;
+
 }
 
-/* --- Layout for the List of Cards --- */
+.break{
+  display: block;
+}
+
 .assignments-lists {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  background-color: rgb(224,224,224);
+  justify-content: flex-start;
   padding: 20px;
-  background-color: rgb(222, 222, 222);
+  border-radius: 8px;
 }
 
-/* --- The Card Container --- */
 .assignment-card {
+  flex: 1 1 350px;      
+  
+  max-width: 400px;     
+
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
-  border-radius: 12px; /* Rounded corners */
+  border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
+
 }
 
 .assignment-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 15px;
-  padding-bottom: 12px;
   border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
 }
-
 
 .header-left h3 {
   margin: 0;
@@ -187,12 +194,20 @@ body {
   color: #721c24;
 }
 
-/* --- Line 2: Description --- */
+
 .card-body p {
   margin: 0;
   color: #555;
   line-height: 1.6;
   font-size: 0.95rem;
+}
+
+.home-pending{
+  display: block;
+  gap: 20px;
+  background-color: rgb(224,224,224);
+  padding: 20px;
+  border-radius: 8px;
 }
 
 /*---------------------------------------------Tasks Page Styles-------------------------------------------------*/
