@@ -1,0 +1,25 @@
+/*---------------------------------------------Tasks Page Styles-------------------------------------------------*/
+
+.tasks-container{
+  flex: 1;
+  background-color: rgb(222, 222, 222 );
+  margin: 20px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.tasks-h1{
+  text-align: center;
+  color: rgb(164, 5, 204);
+}
+
+.task-addButton{
+display: flex;
+justify-content: left;
+}
+
+.tasks-list{
+  display: flex;
+  background-color: white;
+  margin: 20px;
+}

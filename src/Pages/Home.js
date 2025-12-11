@@ -11,6 +11,8 @@ function Home() {
       .catch((err) => console.error("Failed to load JSON:", err));
   }, []);
 
+  const pendingCount =assignmentData.filter((assignment)=>assignment.status === "Pending").length;
+
   return (
 
     <div className="home-container1">
@@ -47,7 +49,7 @@ function Home() {
     </div>
     <h1 className="home_h1">Pending</h1>
       <div className="home-pending">
-        <h3>Pending Assignments :</h3>
+        <h3 className="pendingCount">Pending Assignments : {pendingCount}</h3>
 
       </div>
     </div>

@@ -1,3 +1,5 @@
+import "../Styles/Tasks.css";
+
 function Tasks() {
   return (
   <div className='tasks-container'>
