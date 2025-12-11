@@ -5,9 +5,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home";
-import About from "./Pages/About";
+import Notes from "./Pages/Notes";
 import Search from "./Pages/Search";
-import Cart from "./Pages/Cart";
+import Tasks from "./Pages/Tasks";
+import Profile from "./Pages/Profile";
 // just to create url and on which url which page should displayed
 const routerVariables = createBrowserRouter([
   {
@@ -19,16 +20,20 @@ const routerVariables = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about",
-        element: <About></About>,
+        path: "/notes",
+        element: <Notes></Notes>,
       },
       {
         path: "/search",
         element: <Search></Search>,
       },
       {
-        path: "/cart",
-        element: <Cart></Cart>,
+        path: "/tasks",
+        element: <Tasks></Tasks>,
+      },
+      {
+        path: "/profile",
+        element: <Profile></Profile>,
       },
       {
         path: "*",

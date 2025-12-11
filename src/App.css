@@ -43,11 +43,11 @@ body {
 }
 
 .links a:hover {
-  background-color:#c7058d;
+  background: linear-gradient(180deg, rgb(199, 5, 141), rgb(113, 3, 141));
 }
 
 .links a.active {
-  background-color:  #71038d;
+  background-color:  rgb(113, 3, 141);
 }
 
 /* Page Content */
@@ -83,4 +83,26 @@ body {
   .page-container {
     padding: 1rem;
   }
+}
+
+.home_h1 {
+  text-align: center;
+  color: rgb(4, 200, 255);
+  margin-top: 2rem;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tasks-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tasks-h1 {
+  text-align: center;
+  color: rgb(4, 200, 255);
+  margin-top: 2rem;
 }
