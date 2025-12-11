@@ -5,7 +5,7 @@ function Home() {
   const [assignmentData, setAssignmentData] = useState([]);
 
   useEffect(() => {
-    fetch("/assignments.json")       // public folder -> root path
+    fetch("/assignments.json")
       .then((res) => res.json())
       .then((data) => setAssignmentData(data))
       .catch((err) => console.error("Failed to load JSON:", err));
@@ -18,11 +18,27 @@ function Home() {
       <div className="assignments-lists">
         {assignmentData.map((assignment) => (
           <div key={assignment.id} className="assignment-card">
-            <h3>{assignment.title}</h3>
-            <p><strong>Subject:</strong> {assignment.subject}</p>
-            <p>{assignment.description}</p>
-            <p><strong>Due:</strong> {assignment.dueDate}</p>
-            <p><strong>Status:</strong> {assignment.status}</p>
+            
+            {/* Line 1: Header (Title Left, Meta Right) */}
+            <div className="card-header">
+              <div className="header-left">
+                <h3>{assignment.title}</h3>
+                <span className="subject-tag">{assignment.subject}</span>
+              </div>
+              
+              <div className="header-right">
+                <span className="due-date">Due: {assignment.dueDate}</span>
+                <span className={`status-badge ${assignment.status.toLowerCase()}`}>
+                  {assignment.status}
+                </span>
+              </div>
+            </div>
+
+            {/* Line 2: Description */}
+            <div className="card-body">
+              <p>{assignment.description}</p>
+            </div>
+            
           </div>
         ))}
       </div>
