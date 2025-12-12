@@ -1,5 +1,8 @@
 import "./../Styles/Login.css";
+import React, {useState } from "react";
 const Login = () => {
+    let [email, setEmail] = useState("");
+    let [password, setPassword] = useState("");
   return (
     <div className="login">
       <form className="loginForm">
