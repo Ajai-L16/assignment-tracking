@@ -4,10 +4,11 @@ function Header() {
     <header className='header'>
         <div className='links'>
           <NavLink to={"/"}><p className='para'>Home</p></NavLink>
-          <NavLink to={"/notes"}>Notes</NavLink>
           <NavLink to={"/tasks"}>Tasks</NavLink>
+          <NavLink to={"/notes"}>Notes</NavLink>
           <NavLink to={"/search"}>Search</NavLink>
           <NavLink to={"/profile"}>Profile</NavLink>
+          <NavLink to={"/login"}>Login</NavLink>
         </div>
       </header>
   )

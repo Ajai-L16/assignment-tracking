@@ -9,6 +9,7 @@ import Notes from "./Pages/Notes";
 import Search from "./Pages/Search";
 import Tasks from "./Pages/Tasks";
 import Profile from "./Pages/Profile";
+import Login from "./Pages/Login";
 // just to create url and on which url which page should displayed
 const routerVariables = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const routerVariables = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
       },
       {
         path: "/notes",
