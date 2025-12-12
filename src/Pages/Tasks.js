@@ -11,8 +11,9 @@ function Tasks() {
         .then((data) => setAssignmentData(data))
         .catch((err) => console.error("Failed to load JSON:", err));
     }, []);
-  
+    const taskCount = assignmentData.length;
     const pendingCount =assignmentData.filter((assignment)=>assignment.status === "Pending").length;
+    const inProgress =assignmentData.filter((assignment)=>assignment.status === "In Progress").length;
     const completedCount =assignmentData.filter((assignment)=>assignment.status === "Completed").length;
 
 
@@ -22,9 +23,13 @@ function Tasks() {
     <div className="task-addButton"><button className='addButton'>Add Task</button></div>
 
     <div className="status-icons">
+      <h4>Total Task:</h4>
       <h4>pending: </h4>
+      <h4>In Progress</h4>
       <h4>completed: </h4>
+      <h4 className="tottask">{taskCount}</h4>
       <h4 className="pen">{pendingCount} </h4>
+      <h4 className="inPro">{inProgress}</h4>
       <h4 className="com">{completedCount} </h4>
     </div>
     

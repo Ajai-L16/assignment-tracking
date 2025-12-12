@@ -3,7 +3,7 @@ function Header() {
   return (
     <header className='header'>
         <div className='links'>
-          <NavLink to={"/"}>Home</NavLink>
+          <NavLink to={"/"}><p className='para'>Home</p></NavLink>
           <NavLink to={"/notes"}>Notes</NavLink>
           <NavLink to={"/tasks"}>Tasks</NavLink>
           <NavLink to={"/search"}>Search</NavLink>
