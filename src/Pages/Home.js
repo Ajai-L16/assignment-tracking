@@ -24,7 +24,7 @@ function Home() {
         <div className="assignments-lists">
           {recentAssignments.map((assignment) => (
             <div key={assignment.id} className="assignment-card">
-              <div className="card-header">
+              <div className="card-head">
                 <div className="header-left">
                   <h3>{assignment.title}</h3>
                   <span className="subject-tag">{assignment.subject}</span>
@@ -32,12 +32,10 @@ function Home() {
 
                 <div className="header-right">
                   <span className="due-date">Due: {assignment.dueDate}</span>
-                  <span
-                    className={`status-badge ${assignment.status.toLowerCase()}`}
-                  >
+                  <span className={`status-badge ${assignment.status.toLowerCase()}`}>
                     {assignment.status}
                   </span>
-                </div>
+              </div>
               </div>
 
               <div className="card-body">

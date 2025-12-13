@@ -46,6 +46,18 @@ color: white;
   font-size: 25px;
 }
 
+.project-name{
+  display: flex;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-size: 25px;
+  background-color: rgb(199, 5, 141);
+  
+}
+
 .links a:hover {
   background: linear-gradient(45deg, rgb(199, 5, 141), rgb(113, 3, 141));
 }
@@ -54,7 +66,7 @@ color: white;
   background-color:  rgb(113, 3, 141);
 }
 
-/* Page Content */
+
 .page-container {
   flex: 1;
   padding: 2rem;
@@ -76,7 +88,7 @@ color: white;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .links {
     flex-direction: column;

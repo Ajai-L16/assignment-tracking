@@ -39,12 +39,12 @@ function Tasks() {
         {assignmentData.map((assignment) => (
           <div key={assignment.id} className="task-card">
             <h3>{assignment.title}</h3>
-            <p><strong>Subject:</strong> {assignment.subject}</p>
+            <p>Subject: {assignment.subject}</p>
             <p>{assignment.description}</p>
             <div className="task-meta">
-              <p><strong>Due:</strong> {assignment.dueDate}</p>
-              <p className={`status-text ${assignment.status.toLowerCase().replace(" ", "-")}`}>
-                <strong>Status:</strong> {assignment.status}
+              <p>Due:{assignment.dueDate}</p>
+              <p className={`status-text ${assignment.status.replace(" ","-")}`}>
+                <b>Status:</b> {assignment.status}
               </p>
             </div>
           </div>

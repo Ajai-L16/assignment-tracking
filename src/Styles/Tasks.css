@@ -1,4 +1,4 @@
-/*---------------------------------------------Tasks Page Styles-------------------------------------------------*/
+
 
 .tasks-container {
   flex: 1;
@@ -50,13 +50,14 @@
   margin: 10px 0;
 }
 
-.status-icons .pen { color: red; }
-.status-icons .com { color: green; }
-.status-icons .inPro { color: orange; }
-.status-icons .tottask { color: rgb(164,5,204); }
-.status-text.pending { color: red; }
-.status-text.completed { color: green; }
-.status-text.in-progress { color: orange; }
+.status-icons .pen {color: red;}
+.status-icons .com {color: green;}
+.status-icons .inPro {color: orange; }
+.status-icons .tottask {color:rgb(164,5,204);}
+
+.status-text.Pending {color: red;}
+.status-text.Completed {color: green;}
+.status-text.In-Progress {color: orange;}
 
 .tasks-list {
   display: flex;
@@ -69,7 +70,6 @@
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .task-card h3 {
@@ -88,6 +88,5 @@
   justify-content: space-between;
   margin-top: 15px;
   padding-top: 10px;
-  border-top: 1px solid #eee;
   font-size: 0.9em;
 }

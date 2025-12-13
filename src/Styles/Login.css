@@ -1,5 +1,5 @@
 .login {
-  background-color: #e4e2f5;
+  background: linear-gradient(45deg, rgb(10, 178, 178)        , white, white)  ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@
 }
 
 .loginForm {
-  background-color: #fff;
+  background: linear-gradient(225deg, cyan,);
   padding: 32px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
