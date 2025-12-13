@@ -47,7 +47,7 @@ color: white;
 }
 
 .links a:hover {
-  background: linear-gradient(180deg, rgb(199, 5, 141), rgb(113, 3, 141));
+  background: linear-gradient(45deg, rgb(199, 5, 141), rgb(113, 3, 141));
 }
 
 .links a.active {
