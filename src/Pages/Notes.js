@@ -19,11 +19,11 @@ function Notes() {
       <h1 className="">Notes Page</h1>
          <form onSubmit={handleSubmit(onSubmitHandler)}>
                 <label>Author: </label>
-                <input {...register("name")}type="text" />
+                <input {...register("name")}type="text" placeholder="Name"/>
                 <label>Date: </label>
-                <input {...register("date")} type="date" />
+                <input {...register("date")} type="date"/>
                 <label>Subject: </label>
-                <input {...register("subject")} type="text" />
+                <input {...register("subject")} type="text" placeholder="Subject Name"/>
                 <label>Description</label>
                 <input {...register("description")} type="text" />
                 <button type="submit">Add Notes</button>
