@@ -141,7 +141,6 @@ function Tasks() {
                 onChange={handleInputChange}
                 required
               />
-
               <label>Status:</label>
               <select
                 name="status"
