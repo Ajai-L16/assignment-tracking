@@ -1,6 +1,9 @@
 .notes-container {
   flex: 1;
-  background-color: rgb(222, 222, 222);
+  background-image: url('./../../public/notes-taking.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 20px;
   border-radius: 8px;
   padding: 20px;

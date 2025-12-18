@@ -19,14 +19,21 @@ body {
 
 /* Header Styles */
 .header {
-  background: #000000;
-  padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, rgb(44, 62, 80) 0%, rgb(52, 73, 94) 100%);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-bottom: 3px solid rgb(164, 5, 204);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
 .links {
   display: flex;
-  justify-content: center;
   gap: 2rem;
 }
 
@@ -38,32 +45,46 @@ color: white;
 }
 
 .links a {
-  color: white;
+  color: #e8e9ea;
   text-decoration: none;
-  padding: 0.5rem 2rem;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  font-size: 25px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  border: 2px solid;
 }
 
-.project-name{
+.project-name {
   display: flex;
   color: white;
   text-decoration: none;
-  padding: 0.5rem 2rem;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  font-size: 25px;
-  background-color: rgb(199, 5, 141);
-  
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(45deg, rgb(164, 5, 204), rgb(199, 5, 141));
+  box-shadow: 0 2px 8px rgba(164, 5, 204, 0.3);
+}
+
+.project-name:hover {
+  transform: scale(1.05);
 }
 
 .links a:hover {
-  background: linear-gradient(45deg, rgb(199, 5, 141), rgb(113, 3, 141));
+  background: linear-gradient(45deg, rgb(5, 131, 185), rgb(164, 5, 204));
+  border-color: rgba(164, 5, 204, 0.5);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(164, 5, 204, 0.3);
 }
 
 .links a.active {
-  background-color:  rgb(113, 3, 141);
+  background: linear-gradient(45deg, rgb(164, 5, 204), rgb(199, 5, 141));
+  color: white;
+  border-color: rgb(164, 5, 204);
+  box-shadow: 0 2px 8px rgba(164, 5, 204, 0.4);
 }
 
 
@@ -198,4 +219,29 @@ color: white;
 .edit-buttons {
   text-align: center;
   margin-top: 20px;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
 }

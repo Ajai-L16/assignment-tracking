@@ -108,7 +108,7 @@ function Notes() {
       </form>
 
       <div className="notes-list">
-        <h2>My Notes ({notes.length})</h2>
+        <h2>My Notes</h2>
         {notes.length === 0 ? (
           <p className="no-notes">No notes yet. Add your first note above!</p>
         ) : (

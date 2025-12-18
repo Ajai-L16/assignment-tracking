@@ -26,6 +26,7 @@ const Login = () => {
   };
 
   return (
+    <div className="big-container">
     <div className="login-container">
       <div className="auth-card">
         <div className="auth-tabs">
@@ -101,8 +102,13 @@ const Login = () => {
           <button className="auth-button" type="submit">
             {isLogin ? "Login" : "Sign Up"}
           </button>
+          
+          <button className="logout-button" type="button">
+            Logout
+          </button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

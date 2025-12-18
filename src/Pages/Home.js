@@ -5,7 +5,6 @@ import "../Styles/Home.css";
 function Home() {
   return (
     <div className="home-landing">
-      {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Master Your Assignments. Declutter Your Mind.</h1>
@@ -49,8 +48,7 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* Use Cases */}
+     
       <section className="use-cases">
         <h2 className="section-title">For Every Student</h2>
         <div className="cases-grid">
@@ -72,7 +70,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="home-footer">
         <div className="footer-content">
           <Link to="/login" className="footer-link">Login</Link>

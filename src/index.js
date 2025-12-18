@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home";
 import Dashboard from "./Pages/Dashboard";
+import About from "./Pages/About";
 import Notes from "./Pages/Notes";
 
 import Tasks from "./Pages/Tasks";
@@ -37,6 +38,10 @@ const routerVariables = createBrowserRouter([
       {
         path: "/tasks",
         element: <Tasks></Tasks>,
+      },
+      {
+        path: "/about",
+        element: <About></About>,
       },
       {
         path: "/profile",
