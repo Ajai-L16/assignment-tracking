@@ -4,7 +4,7 @@ function Header() {
     <header className='header'>
         <div className='links'>
           <span className='project-name'>TrackIT</span>
-          <NavLink to={"/"}><p className='para'>Home</p></NavLink>
+          <NavLink to={"/"}><p className='para'>Dashboard</p></NavLink>
           <NavLink to={"/tasks"}>Tasks</NavLink>
           <NavLink to={"/notes"}>Notes</NavLink>
           <NavLink to={"/search"}>Search</NavLink>

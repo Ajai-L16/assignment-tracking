@@ -1,43 +1,100 @@
-.login {
-  background: linear-gradient(45deg, rgb(10, 178, 178)        , white, white)  ;
+.login-container {
+  flex: 1;
+  background: linear-gradient(45deg, rgb(5, 131, 185), white, white);
+  margin: 20px;
+  border-radius: 8px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 98vh;
+  min-height: 500px;
 }
 
-.loginForm {
-  background: linear-gradient(225deg, cyan,);
-  padding: 32px;
+.auth-card {
+  background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 320px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.auth-tabs {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  background: rgb(164, 5, 204);
 }
 
-.loginForm h2 {
+.tab {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.tab.active {
+  background: white;
+  color: rgb(164, 5, 204);
+}
+
+.auth-form {
+  padding: 30px;
+  background: linear-gradient(45deg, rgb(1, 166, 236), white, white);
+}
+
+.auth-form h2 {
   text-align: center;
+  color: rgb(164, 5, 204);
+  margin-bottom: 25px;
   font-size: 24px;
-  color: black;
-}
-.loginForm input {
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
 }
 
-.loginButton {
-  padding: 10px;
-  background-color: #2563eb;
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: rgb(164, 5, 204);
+}
+
+.auth-button {
+  width: 100%;
+  padding: 14px;
+  background-color: rgb(164, 5, 204);
   color: white;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
   font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
 }
-.loginButton:hover {
-  background-color: #1e40af;
+
+.auth-button:hover {
+  background: linear-gradient(45deg, rgb(5, 131, 185), rgb(164, 5, 204));
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "../Styles/Home.css";
+import "../Styles/Dashboard.css";
 
-function Home() {
+function Dashboard() {
   const [assignmentData, setAssignmentData] = useState([]);
 
   useEffect(() => {
@@ -17,10 +17,10 @@ function Home() {
   const recentAssignments = [...assignmentData].reverse().slice(0, 6);
 
   return (
-    <div className="home-container1">
+    <div className="dashboard-container">
       <div className="break">
         
-        <h1 className="home_h1">Recent Tasks</h1>
+        <h1 className="dashboard-h1">Recent Tasks</h1>
         <div className="assignments-lists">
           {recentAssignments.map((assignment) => (
             <div key={assignment.id} className="assignment-card">
@@ -45,12 +45,14 @@ function Home() {
           ))}
         </div>
       </div>
-      <h1 className="home_h1">Pending</h1>
-      <div className="home-pending">
+      <div className="break-2">
+      <h1 className="dashboard-h1">Pending</h1>
+      <div className="dashboard-pending">
         <h3>Assignments pending: {pendingCount}</h3>
+        </div>
       </div>
     </div>
   );
 }
 
-export default Home;
+export default Dashboard;
