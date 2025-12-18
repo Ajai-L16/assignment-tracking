@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home";
 import Dashboard from "./Pages/Dashboard";
 import Notes from "./Pages/Notes";
-import Search from "./Pages/Search";
+
 import Tasks from "./Pages/Tasks";
 import Profile from "./Pages/Profile";
 import Login from "./Pages/Login";
@@ -33,10 +33,7 @@ const routerVariables = createBrowserRouter([
         path: "/notes",
         element: <Notes></Notes>,
       },
-      {
-        path: "/search",
-        element: <Search></Search>,
-      },
+
       {
         path: "/tasks",
         element: <Tasks></Tasks>,
